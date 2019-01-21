@@ -1,0 +1,47 @@
+﻿
+<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="WebApplication2.SiteMaster" %>
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - CPS530 Project</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+
+   
+<div class="ui inverted menu black">
+  <div class="header item">CPS530</div>
+  <a href="Default.aspx" class="item" data-vivaldi-spatnav-clickable="1">Home</a>
+  <a href="SnapShotSummary.aspx" class="item" data-vivaldi-spatnav-clickable="1">SnapShot Summary</a>
+  <div class="ui simple dropdown item">
+    ASP.NET and Semantic UI
+    <div class="dropdown icon"></div>
+    <div class="menu">
+        <a class="item" href="Installation.aspx">Installation Tutorial</a>
+        <a class="item" href="Tutorial.aspx">How to make a GREAT looking Page!</a>
+    </div>
+  </div>
+      <a class="item" href="Conclusion.aspx">Our Conclusion</a>
+      <a class="item" href="Credits.aspx">Credits</a>
+
+     </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - CPS530 Project</p>
+            </footer>
+        </div>
+  
+
+</html>
