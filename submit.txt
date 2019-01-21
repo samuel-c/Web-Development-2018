@@ -1,0 +1,2 @@
+URL (P1): http://www.scs.ryerson.ca/~s42chow/lab05p01.html
+URL (P2): http://webdev.scs.ryerson.ca:8080/s42chow/lab05p02.asp?texture=backstar.gif
